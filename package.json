@@ -1,0 +1,30 @@
+{
+  "name": "property-listing",
+  "version": "1.0.0",
+  "description": "A property listing website with admin panel and WhatsApp integration.",
+  "main": "frontend/index.js",
+  "scripts": {
+    "start": "npm run client",
+    "client": "cd frontend && npm start",
+    "server": "cd backend && npm start",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0",
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "cors": "^2.8.5",
+    "whatsapp-web.js": "^1.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "author": "Fola",
+  "license": "MIT"
+}
